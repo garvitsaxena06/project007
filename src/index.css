@@ -1,13 +1,151 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* 
+    GENERAL
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass&display=swap");
+
+body {
+    background: #000;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
 }
+
+@media(max-width: 768px) {
+    section {
+        display: block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+        padding-left: 60px;
+    }
+}
+
+@media(min-width: 769px) {
+    section {
+        display: block;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+
+img {
+    max-width: 100% !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.icons {
+    color: #fff;
+    background-color: #1B1B1B;
+}
+  
+
+/* 
+    TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5, h6{font-family: 'Overpass', sans-serif; font-weight:normal; margin-top: 0px; margin-bottom: 0px; text-transform: capitalize; letter-spacing: 2px;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
+h1 { font-family: 'Overpass', sans-serif; font-size: 60px; font-style: normal; line-height: 70px; font-weight: 700; text-transform: capitalize; color: #fff; letter-spacing: 0;}
+h2 { font-family: 'Overpass', sans-serif; font-size: 38px; font-style: normal; line-height: 46px; font-weight: 600; color: #fff; text-transform: capitalize; margin-bottom: 10px; position: relative;}
+h3 { font-family: 'Overpass', sans-serif; font-size: 30px; font-style: normal; line-height: 36px; font-weight: 500;}
+h4 { font-family: 'Overpass', sans-serif; font-size: 24px; font-style: normal; margin-bottom: 10px; font-weight: 500; line-height: 30px; color: #fff;}
+h5 { font-family: 'Overpass', sans-serif; font-size: 20px; font-style: normal; margin-bottom: 10px; font-weight: 500; line-height: 26px; color: #fff;}
+h6 { font-family: 'Overpass', sans-serif; font-size: 18px; font-style: normal; line-height: 24px; margin-bottom: 10px; color: #fff;}
+
+/* 
+    NAVBAR
+*/
+.d-flex {
+    width: 50px;
+    height: 100vh;
+    position: fixed;
+    background-color: #1B1B1B;
+}
+
+.my-col {
+    background-color: #1B1B1B;
+    width: 50px;
+}
+
+.navbar {
+    background: transparent;
+    color: #fff;
+    left: 150px;
+    width: 50%;
+}
+
+/* 
+    SIDEBAR MENU
+*/
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+.sidebar {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+
+    padding-top: 20px; 
+    transition: 0.5s; 
+}
+  
+/* 
+    SIDEBAR LINKS
+*/
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+hr {
+    border-top: 1px solid #fff;
+}
+
+.categories {
+    padding: 8px 8px 0px 32px;
+}
+
+/* 
+    STYLE PAGE CONTENT
+*/
+#main {
+    transition: margin-left .5s;
+}
+
+/* 
+    OPEN/CLOSE BUTTON
+*/
+.openbtn {
+    cursor: pointer;
+    background-color: #1B1B1B;
+    color: white;
+    border: none;
+}
+
+
+
