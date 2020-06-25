@@ -7,7 +7,13 @@ class Outlines extends Component {
     if (this.props.isMobile()) 
       return (
         <div>
-          Mobile
+          <div className="navbarMobile d-flex justify-content-around">
+            <a href="/"><i className="fas fa-home fa-lg"></i></a>
+            <a href="/"><i className="fas fa-star fa-lg"></i></a>
+            <a href="/"><i className="fas fa-search fa-lg"></i></a>
+            <a href="/"><i className="fas fa-cart-plus fa-lg"></i></a>
+            <a href="/"><i className="fas fa-user fa-lg"></i></a>
+          </div>
         </div>
       )
     return (
