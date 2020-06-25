@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import VNavbar from "../components/VerticalNavbar";
+import Outlines from "../components/Outlines";
 class Home extends Component {
     render() {
         return (
             <div>
-                <VNavbar />
+                <Outlines />
             </div>
         )
     }

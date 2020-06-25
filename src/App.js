@@ -5,7 +5,7 @@ import Home from './views/Home';
 class App extends Component {
   render() {
     return (
-      <div id="main">
+      <div>
         <Router>
           <Switch>
             <Route path='/' component={Home} />

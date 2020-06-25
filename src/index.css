@@ -11,7 +11,7 @@
 body {
     background: #000;
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: #fff !important;
 }
 
 section {
@@ -31,7 +31,16 @@ button:focus {
     color: #fff;
     background-color: #1B1B1B;
 }
-  
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
 /* 
     TYPOGRAPHY
@@ -48,11 +57,9 @@ h6 { font-family: 'Overpass', sans-serif; font-size: 18px; font-style: normal; l
 /* 
     NAVBAR
 */
-.d-flex {
-    width: 50px;
-    height: 100vh;
-    position: fixed;
-    background-color: #1B1B1B;
+.navbar {
+    background: transparent;
+    color: #fff;
 }
 
 /* 
@@ -109,10 +116,16 @@ hr {
 */
 .openbtn {
     cursor: pointer;
-    background-color: #1B1B1B;
+    background: transparent;
     color: white;
     border: none;
 }
 
+/* 
+    CALL TO ACTION BUTTON
+*/
+.cta-btn {
+    border: 2px solid #fff
+}
 
 
