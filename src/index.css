@@ -6,7 +6,9 @@
 /* 
     GENERAL
 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&family=Open+Sans&family=Overpass&display=swap");
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
 
 body {
     background: #000;
@@ -63,69 +65,100 @@ h6 { font-family: 'Overpass', sans-serif; font-size: 18px; font-style: normal; l
 }
 
 /* 
+    SEARCH BOX
+*/
+.mainLoginInput {
+    font-family: 'Noto Sans', sans-serif !important;
+    height: 30px;
+    border-radius: 20px;
+    border-width: 0;
+    margin: 5px 0;
+    background-color: #1B1B1B;
+}
+
+.mainLoginInput::-webkit-input-placeholder { 
+    font-family: 'Noto Sans', FontAwesome, sans-serif;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.mainLoginInput::-moz-placeholder  { 
+    font-family: 'Noto Sans', FontAwesome, sans-serif;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+.mainLoginInput:-ms-input-placeholder  { 
+    font-family: 'Noto Sans', FontAwesome, sans-serif;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    padding-left: 5px;
+    padding-top: 2px;
+}
+
+/* 
     SIDEBAR MENU
 */
-
-@media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-}
-
-.sidebar {
-    height: 100%; 
-    width: 0; 
-    position: fixed; 
-    z-index: 1; 
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;
-    padding-top: 20px; 
-    transition: 0.5s; 
+    padding-top: 20px;
 }
-  
-/* 
-    SIDEBAR LINKS
-*/
-.sidebar a {
+
+.sidenav a, .sidenav span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 500;
     color: #fff;
     display: block;
-    transition: 0.3s;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-hr {
-    border-top: 1px solid #fff;
+.sidenav a:hover {
+    background-color: #1B1B1B;
 }
 
-.categories {
-    padding: 8px 8px 0px 32px;
-}
-
-/* 
-    STYLE PAGE CONTENT
-*/
 #main {
-    transition: margin-left .5s;
+    margin-left: 200px; 
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 /* 
-    OPEN/CLOSE BUTTON
+    CREATE BTN DSKTP
 */
-.openbtn {
+.create-btn {
+    background: red;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    border-color: red;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 10px 16px;
+    margin-left: 35px;
     cursor: pointer;
-    background: transparent;
-    color: white;
-    border: none;
 }
-
-/* 
-    CALL TO ACTION BUTTON
-*/
-.cta-btn {
-    border: 2px solid #fff
-}
-
 
