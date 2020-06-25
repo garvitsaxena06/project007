@@ -60,6 +60,84 @@ h4 { font-family: 'Montserrat', sans-serif; font-size: 24px; font-style: normal;
 h5 { font-family: 'Montserrat', sans-serif; font-size: 20px; font-style: normal; margin-bottom: 10px; font-weight: 500; line-height: 26px; color: #fff;}
 h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal; line-height: 24px; margin-bottom: 10px; color: #fff;}
 
+
+/* 
+    PRELOADER
+*/
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #000;
+}
+  
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #CC0001;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+  
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* 
+    BACK TO TOP
+*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #CC0001;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+  
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
 /* 
     NAVBAR
 */
@@ -156,7 +234,7 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     CREATE BTN DSKTP
 */
 .create-btn {
-    background: red;
+    background: #CC0001;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
