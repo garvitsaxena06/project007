@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     if (this.props.isMobile())
       return (
-          <div>
+        <div>
           <Router>
             <Switch>
               <Route path='/' component={Home} />
