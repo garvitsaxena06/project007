@@ -116,28 +116,54 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 /* 
     BACK TO TOP
 */
-.back-to-top {
-    position: fixed;
-    display: none;
-    background: #CC0001;
-    color: #fff;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    line-height: 1;
-    font-size: 16px;
-    border-radius: 50%;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.5s;
-    z-index: 11;
+.back-to-top:hover {
+	color: #fff !important;
+	background-color: #e74c3c;
+	text-decoration: none;
 }
-  
-.back-to-top i {
-    padding-top: 12px;
-    color: #fff;
+ 
+.back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 230px;
+	width: 3.2rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size: 1.4rem;
+	color: #fff;
+	background-color: #CC0001;
+	text-decoration: none;
+	border-radius: 3.2rem;
+	text-align: center;
+	cursor: pointer;
 }
 
+/* 
+    CREATE-BTN
+*/
+.createBtn:hover {
+	color: #fff !important;
+	background-color: #e74c3c;
+	text-decoration: none;
+}
+ 
+.createBtn {
+	display: none;
+	position: fixed;
+	bottom: 80px;
+	right: 20px;
+	width: 3.2rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size: 1.4rem;
+	color: #fff;
+	background-color: #CC0001;
+	text-decoration: none;
+	border-radius: 3.2rem;
+	text-align: center;
+	cursor: pointer;
+}
 /* 
     NAVBAR
 */
@@ -308,4 +334,43 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 .navbarMobile a:hover {
     background-color:#1B1B1B;
 }
- 
+
+/* 
+    SIDEBAR MENU MOBILE
+*/
+.sidenavMobile {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: #CC0001;
+}
+
+.sidenavMobile a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sidenavMobile a:hover {
+    background-color: #1B1B1B;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+}

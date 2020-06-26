@@ -4,6 +4,7 @@ import {withGetScreen} from 'react-getscreen'
 import Home from './views/Home';
 import Preloader from "./components/Preloader";
 import BackToTop from "./components/BackToTop";
+import CreateBtn from "./components/CreateBtn";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           </Router>
           <Preloader />
           <BackToTop />
+          <CreateBtn />
         </div>
       )
     return (
@@ -28,6 +30,7 @@ class App extends Component {
         </Router>
         <Preloader />
         <BackToTop />
+        <CreateBtn />
       </div>
     )
   }

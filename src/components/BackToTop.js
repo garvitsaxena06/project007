@@ -1,29 +1,43 @@
 import React from 'react';
+import {withGetScreen} from 'react-getscreen'
 import $ from 'jquery';
 
 class BackToTop extends React.Component {
     componentDidMount(){
-        $('.back-to-top').click(function(){
-            $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-            return false;
-          });
-        window.addEventListener('scroll', ()=>{
-            if(window.pageYOffset > 100){
-                document.querySelector('.back-to-top').classList.remove("fadeOut");
-                document.querySelector('.back-to-top').style.display = "block";
-                document.querySelector('.back-to-top').classList.add("fadeIn");
-            }else {
-                document.querySelector('.back-to-top').classList.remove("fadeIn");
-                document.querySelector('.back-to-top').classList.add("fadeOut");
-            }
+        $(document).ready(function() {
+            var offset = 100;
+            var duration = 500;
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset) {
+                    $('.back-to-top').fadeIn(duration);
+                } else {
+                    $('.back-to-top').fadeOut(duration);
+                }
+            });
+     
+            $('.back-to-top').click(function(event) {
+                event.preventDefault();
+                $('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            })
         });
     }
 
     render(){
-        return <a href="#" className="back-to-top animated"><i className="fa fa-chevron-up"></i></a>;
+        if (this.props.isMobile()) {
+            return (
+                <React.Fragment>
+                </React.Fragment>
+                
+            )
+        }
+          
+        return (
+            <a href="/" className="back-to-top"><i className="fas fa-chevron-up"></i></a>
+        )
     }
 }
 
-export default BackToTop;
+export default withGetScreen(BackToTop)
 
 

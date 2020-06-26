@@ -3,18 +3,43 @@ import logo from "../assets/img/logo.png";
 import {withGetScreen} from 'react-getscreen'
 
 class Outlines extends Component {
+  constructor() {
+    super()
+    this.state = {
+      isOpen: false
+    }
+  }
+  closeNav = () => {
+    this.setState({
+      isOpen: false
+    })
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  openNav = () => {
+    this.setState({
+      isOpen: true
+    })
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+
   render() {
     if (this.props.isMobile()) 
       return (
-        <div>
-          <div className="navbarMobile d-flex justify-content-around">
-            <a href="/"><i className="fas fa-home fa-lg"></i></a>
-            <a href="/"><i className="fas fa-star fa-lg"></i></a>
-            <a href="/"><i className="fas fa-search fa-lg"></i></a>
-            <a href="/"><i className="fas fa-cart-plus fa-lg"></i></a>
-            <a href="/"><i className="fas fa-user fa-lg"></i></a>
+        <React.Fragment>
+           
+          
+
+          <div>
+            <div className="navbarMobile d-flex justify-content-around">
+              <a href="/"><i className="fas fa-home fa-lg"></i></a>
+              <a href="/"><i className="fas fa-star fa-lg"></i></a>
+              <a href="/"><i className="fas fa-search fa-lg"></i></a>
+              <a href="/"><i className="fas fa-cart-plus fa-lg"></i></a>
+              <a href="/"><i className="fas fa-user fa-lg"></i></a>
+            </div>
           </div>
-        </div>
+        </React.Fragment>
       )
     return (
       <div>
