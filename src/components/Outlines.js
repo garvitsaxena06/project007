@@ -42,9 +42,14 @@ class Outlines extends Component {
             </div>
             <div>
                 <div className="d-flex">
+                    <div>
+                      <div className="navbar-brand">
+                        <a href="/" className="navbar-brand logo"><img src={logo} alt="IGLogo" height="50px"/></a>
+                      </div>
+                    </div>
                     <div className="ml-auto">
                         <button className="openbtn ml-2 mt-3" onClick={this.openNav}><i className="fas fa-bars fa-lg icons"></i></button>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>
