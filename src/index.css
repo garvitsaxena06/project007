@@ -54,10 +54,10 @@ h1, h2, h3, h4, h5, h6{font-family: 'Montserrat', sans-serif; font-weight:normal
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 h1 { font-family: 'Montserrat', sans-serif; font-size: 60px; font-style: normal; line-height: 70px; font-weight: 700; text-transform: capitalize; color: #fff; letter-spacing: 0;}
 h2 { font-family: 'Montserrat', sans-serif; font-size: 38px; font-style: normal; line-height: 46px; font-weight: 600; color: #fff; text-transform: capitalize; margin-bottom: 10px; position: relative;}
-h3 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-style: normal; line-height: 36px; font-weight: 500;}
+h3 { font-family: 'Montserrat', sans-serif; font-size: 30px; font-style: normal; line-height: 36px; font-weight: 500; color: #fff;}
 h4 { font-family: 'Montserrat', sans-serif; font-size: 24px; font-style: normal; margin-bottom: 10px; font-weight: 500; line-height: 30px; color: #fff;}
 h5 { font-family: 'Montserrat', sans-serif; font-size: 20px; font-style: normal; margin-bottom: 10px; font-weight: 500; line-height: 26px; color: #fff;}
-h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal; line-height: 24px; margin-bottom: 10px; color: #fff;}
+h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal; line-height: 24px; margin-bottom: 30px; color: #fff; font-weight: 600;}
 
 
 /* 
@@ -438,4 +438,41 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     text-decoration: underline;
     vertical-align: top;
     display: inline-block !important;
+}
+
+/* 
+    VIDEO CARD
+*/
+.card {
+    background-color: #000;
+    border: 0px solid #000;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-title {
+    font-size: 14px;
+}
+
+/* 
+    SHOW MORE BTN
+*/
+#profile-description .show-more {
+    color: #777; 
+    position:relative; 
+    font-size: 12px; 
+    padding-top: 5px; 
+    height: 20px; 
+    text-align: center; 
+    background: #f1f1f1; 
+    cursor: pointer;
+}
+#profile-description .show-more:hover { 
+    color: #1779dd;
+}
+#profile-description .show-more-height { 
+    height: 250px; 
+    overflow:hidden; 
 }

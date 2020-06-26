@@ -35,7 +35,7 @@ class Outlines extends Component {
                 <button className="closebtn" onClick={this.closeNav}><i className="fas fa-arrow-left fa-xs"></i></button>
                 <div className="d-flex">
                   <div className="ml-auto">
-                    <form class="form-inline">
+                    <form className="form-inline">
                       <input className="mainLoginInputMob form-control mr-sm-2" type="search" placeholder="&#61442; Search" aria-label="Search"/>
                     </form>
                   </div>
@@ -55,7 +55,7 @@ class Outlines extends Component {
           <nav className="navbar navbar-expand-md fixed-top">
             <div className="navbar-collapse collapse w-50 order-1 order-md-0 dual-collapse2">
                 <div className="sidenav">
-                    <div style={{borderBottom: "1px solid #1B1B1B", paddingBottom: "10px"}}>
+                    <div style={{borderBottom: "1px solid #1B1B1B"}}>
                       <div className="navbar-brand">
                         <a href="/" className="navbar-brand logo"><img src={logo} alt="IGLogo"/></a>
                       </div>
