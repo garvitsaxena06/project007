@@ -338,39 +338,60 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 /* 
     SIDEBAR MENU MOBILE
 */
-.sidenavMobile {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    background-color: #CC0001;
+@media screen and (max-height: 450px) {
+    .sidebarMobile {padding-top: 15px;}
+    .sidebarMobile a {font-size: 18px;}
 }
 
-.sidenavMobile a {
-    padding: 8px 8px 8px 32px;
+.sidebarMobile {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #CC0001;
+    overflow-x: hidden;
+    padding-top: 20px; 
+    transition: 0.1s;
+}
+  
+/* 
+    SIDEBAR LINKS
+*/
+.sidebarMobile .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    background-color: #CC0001;
+    color: #fff;
+    border: 0 solid #CC0001;
+    cursor: pointer;
+}
+
+.sidebarMobile a {
+    padding: 8px 100px;
     text-decoration: none;
-    font-size: 14px;
+    text-align: center !important;
+    font-size: 17px;
     font-weight: 600;
     color: #fff;
     display: block;
     font-family: 'Montserrat', sans-serif;
 }
 
-.sidenavMobile a:hover {
-    background-color: #1B1B1B;
+.content {
+    padding: 100px 0;
 }
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
+/* 
+    OPEN/CLOSE BUTTON
+*/
+.openbtn {
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0px 15px;
 }

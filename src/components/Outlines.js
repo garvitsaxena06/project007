@@ -6,28 +6,48 @@ class Outlines extends Component {
   constructor() {
     super()
     this.state = {
-      isOpen: false
+        isOpen: false
     }
   }
+
   closeNav = () => {
-    this.setState({
-      isOpen: false
-    })
-    document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidebar").style.width = "0";
+      this.setState({
+          isOpen: false
+      })
   }
 
   openNav = () => {
-    this.setState({
-      isOpen: true
-    })
-    document.getElementById("mySidenav").style.width = "100%";
+      document.getElementById("mySidebar").style.width = "100%";
+      this.setState({
+          isOpen: true
+      })
   }
 
   render() {
     if (this.props.isMobile()) 
       return (
         <React.Fragment>
-           
+          <div>
+            <div id="mySidebar" className="sidebarMobile">
+            <button className="closebtn" onClick={this.closeNav}><i className="fas fa-arrow-left fa-xs"></i></button>
+                <div className="content">
+                    <a href="/"><i className="fas fa-bolt mr-2"></i>Trending</a>
+                    <a className="mb-5" href="/"><i className="far fa-thumbs-up mr-2"></i>Recommended</a>
+                    <a className="mt-5" style={{paddingTop: "50px"}} href="/">Technology</a>
+                    <a href="/">Content</a>
+                    <a href="/">Marketing</a>
+                    <a href="/">Designing</a>
+                </div>
+            </div>
+            <div>
+                <div className="d-flex">
+                    <div className="ml-auto">
+                        <button className="openbtn ml-2 mt-3" onClick={this.openNav}><i className="fas fa-bars fa-lg icons"></i></button>
+                    </div>    
+                </div>
+            </div>
+        </div>
           
 
           <div>
