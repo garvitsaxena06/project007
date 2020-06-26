@@ -33,7 +33,7 @@ class BackToTop extends React.Component {
         }
           
         return (
-            <a href="/" className="back-to-top"><i className="fas fa-chevron-up"></i></a>
+            <a href="#top" className="back-to-top"><i className="fas fa-chevron-up"></i></a>
         )
     }
 }

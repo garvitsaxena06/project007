@@ -14,7 +14,6 @@ body {
     background: #000;
     font-family: 'Open Sans', sans-serif;
     color: #fff !important;
-    height: 400vh;
 }
 
 section {
@@ -168,7 +167,7 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     NAVBAR
 */
 .navbar {
-    background: #0009;
+    background: #000;
     color: #fff;
 }
 
@@ -190,25 +189,6 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     overflow: visible;
     vertical-align: top;
     display: inline-block !important;
-    padding-left: 5px;
-    padding-top: 2px;
-}
-
-.mainLoginInput::-moz-placeholder  { 
-    font-family: 'Montserrat', FontAwesome, sans-serif;
-    font-weight: normal;
-    overflow: visible;
-    vertical-align: top;
-    display: inline-block !important;
-    padding-left: 5px;
-    padding-top: 2px;
-}
-
-.mainLoginInput:-ms-input-placeholder  { 
-    font-family: 'Montserrat', FontAwesome, sans-serif;
-    font-weight: normal;
-    overflow: visible;
-    vertical-align: top;
     padding-left: 5px;
     padding-top: 2px;
 }
@@ -313,6 +293,10 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 /* 
     NAVBAR MOBILE
 */
+.navbarMobileUp {
+    background-color: #000;
+}
+
 .navbarMobile {
     background-color: #0E0E0E;
     overflow: hidden;
@@ -321,17 +305,19 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     width: 100%;
 }
 
-.navbarMobile a {
+.navbarMobile a, .navbarMobile button {
     float: left;
     display: block;
     color: #fff;
     text-align: center;
+    background-color: #0E0E0E;
+    border: 0 solid #000;
     padding: 20px 25px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.navbarMobile a:hover {
+.navbarMobile a:hover, .navbarMobile button:hover {
     background-color:#1B1B1B;
 }
 
@@ -394,4 +380,62 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     color: white;
     border: none;
     padding: 5px 20px;
+}
+
+/* 
+    SEARCHBAR MENU MOBILE
+*/
+@media screen and (max-height: 450px) {
+    .searchbarMobile {padding-top: 15px;}
+    .searchbarMobile a {font-size: 18px;}
+}
+
+.searchbarMobile {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #CC0001;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+  
+/* 
+    SIDEBAR LINKS
+*/
+.searchbarMobile .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    background-color: #CC0001;
+    color: #fff;
+    border: 0 solid #CC0001;
+    cursor: pointer;
+}
+
+/* 
+    SEARCHBOX MOBILE
+*/
+.mainLoginInputMob {
+    font-family: 'Montserrat', sans-serif !important;
+    height: 30px;
+    width: 50%;
+    border-radius: 20px;
+    border-width: 0;
+    color: #fff;
+    background-color: #CC0001;
+}
+
+.mainLoginInputMob::-webkit-input-placeholder { 
+    font-family: 'Montserrat', FontAwesome, sans-serif;
+    font-weight: normal;
+    overflow: visible;
+    color: #fff;
+    font-size: large;
+    text-decoration: underline;
+    vertical-align: top;
+    display: inline-block !important;
 }
