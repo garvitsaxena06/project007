@@ -3,7 +3,7 @@ import {withGetScreen} from 'react-getscreen'
 import $ from 'jquery';
 
 class BackToTop extends React.Component {
-    componentDidMount(){
+    componentDidMount() {
         $(document).ready(function() {
             var offset = 100;
             var duration = 500;
@@ -28,12 +28,11 @@ class BackToTop extends React.Component {
             return (
                 <React.Fragment>
                 </React.Fragment>
-                
             )
         }
           
         return (
-            <a href="#top" className="back-to-top"><i className="fas fa-chevron-up"></i></a>
+            <a href="#up" className="back-to-top"><i className="fas fa-chevron-up"></i></a>
         )
     }
 }

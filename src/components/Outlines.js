@@ -11,6 +11,8 @@ class Outlines extends Component {
   }
 
   closeNav = () => {
+      var element = document.getElementById("navbarMobile")
+      element.classList.add("fixed-top")
       document.getElementById("mySearchBar").style.width = "0";
       this.setState({
           isOpen: false
@@ -18,6 +20,8 @@ class Outlines extends Component {
   }
 
   openNav = () => {
+      var element = document.getElementById("navbarMobile")
+      element.classList.remove("fixed-top")
       document.getElementById("mySearchBar").style.width = "100%";
       this.setState({
           isOpen: true

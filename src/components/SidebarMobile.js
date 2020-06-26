@@ -27,7 +27,7 @@ class SidebarMobile extends Component {
         if (this.props.isMobile()) 
         return (
             <React.Fragment>
-                <div className="">
+                <div id="navbarMobile" className="fixed-top">
                     <div id="mySidebar" className="sidebarMobile">
                         <button className="closebtn" onClick={this.closeNav}><i className="fas fa-arrow-left fa-xs"></i></button>
                         <div className="content">
