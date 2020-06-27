@@ -470,10 +470,9 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 }
 
 /* 
-    SHOW MORE BTN
+    SHOW MORE BTN1
 */
-
-#profile-description .show-more {
+#profile-description .show-more1 {
     color: #fff; 
     position:relative; 
     font-size: 20px;  
@@ -483,7 +482,25 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     cursor: pointer;
 }
 
-#profile-description .show-more:hover { 
+#profile-description .show-more1:hover { 
+    color: #CC0001;
+}
+
+
+/* 
+    SHOW MORE BTN1
+*/
+#profile-description .show-more2 {
+    color: #fff; 
+    position:relative; 
+    font-size: 20px;  
+    height: 20px; 
+    text-align: center; 
+    background: #000; 
+    cursor: pointer;
+}
+
+#profile-description .show-more2:hover { 
     color: #CC0001;
 }
 

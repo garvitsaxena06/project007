@@ -70,7 +70,7 @@ class Outlines extends Component {
 
             <div className="mx-auto order-0">
               <form className="form-inline mx-auto">
-                <input className="mainLoginInput form-control mr-sm-2" type="search" placeholder="&#61442; Search" aria-label="Search"/>
+                <input className="mainLoginInput form-control mr-sm-2" type="search" placeholder="&#61442; Search" aria-label="Search" id="top" />
               </form>
             </div>
 

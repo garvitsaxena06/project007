@@ -6,8 +6,8 @@ import $ from "jquery"
 
 class Home extends Component {
     componentDidMount() {
-        $(".show-more").click(function () {
-            if($(".text").hasClass("show-more-height")) {
+        $(".show-more1").click(function () {
+            if($(".text1").hasClass("show-more-height")) {
                 $(this).removeClass("fas fa-chevron-down");
                 $(this).addClass("fas fa-chevron-up");
             } else {
@@ -15,23 +15,20 @@ class Home extends Component {
                 $(this).addClass("fas fa-chevron-down");
             }
     
-            $(".text").toggleClass("show-more-height");
+            $(".text1").toggleClass("show-more-height");
         });
 
-        // var element = document.getElementById("show")
-        // element.click(() => {
-        //     if($(".text").hasClass("show-more-height")) {
-        //         let icon = document.getElementById("showIcon")
-        //         icon.classList.remove("fas fa-chevron-down")
-        //         icon.classList.add("fas fa-chevron-up")
-        //     }
-        //     else {
-        //         let icon = document.getElementById("showIcon")
-        //         icon.classList.remove("fas fa-chevron-up")
-        //         icon.classList.add("fas fa-chevron-down ")
-        //     }
-        //     $(".text").toggleClass("show-more-height");
-        // })
+        $(".show-more2").click(function () {
+            if($(".text2").hasClass("show-more-height")) {
+                $(this).removeClass("fas fa-chevron-down");
+                $(this).addClass("fas fa-chevron-up");
+            } else {
+                $(this).removeClass("fas fa-chevron-up");
+                $(this).addClass("fas fa-chevron-down");
+            }
+    
+            $(".text2").toggleClass("show-more-height");
+        });
     }
    
     render() {
@@ -41,7 +38,7 @@ class Home extends Component {
                 <SidebarMobile />
                 <hr className="section-start"/>
                 <section className="text-center" id="profile-description">
-                    <div className="text show-more-height"> 
+                    <div className="text1 show-more-height"> 
                         <h6 className="text-center">My Watchlist</h6>
                         <div className="d-flex flex-wrap">
                             <div className="mx-auto">
@@ -66,13 +63,13 @@ class Home extends Component {
                     </div>
                     <div className="d-flex">
                         <div className="mx-auto">
-                            <div className="show-more fas fa-chevron-down" id="show"></div>
+                            <div className="show-more1 fas fa-chevron-down"></div>
                         </div>
                     </div>
                 </section>
                 <hr className="divider" />
                 <section className="text-center" id="profile-description">
-                    <div className="text show-more-height"> 
+                    <div className="text2 show-more-height"> 
                         <h6 className="text-center">Recommended</h6>
                         <div className="d-flex flex-wrap">
                             <div className="mx-auto">
@@ -97,7 +94,7 @@ class Home extends Component {
                     </div>
                     <div className="d-flex">
                         <div className="mx-auto">
-                            <div className="show-more fas fa-chevron-down" id="show"></div>
+                            <div className="show-more2 fas fa-chevron-down"></div>
                         </div>
                     </div>
                 </section>
