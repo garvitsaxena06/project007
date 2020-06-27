@@ -16,39 +16,57 @@ class Home extends Component {
             $(".text").toggleClass("show-more-height");
         });
     }
+   
     render() {
         return (
             <div>
                 <Outlines />
                 <SidebarMobile />
-                <section id="profile-description">
-                    <div className="text show-more-height">
+                <hr className="section-start"/>
+                <section className="text-center" id="profile-description">
+                    <div className="text show-more-height"> 
                         <h6 className="text-center">My Watchlist</h6>
-                        <div className="row mx-auto">
-                            <div className="col-md-4">
+                        <div className="d-flex flex-wrap">
+                            <div className="mx-auto">
                                 <VideoCard />
                             </div>
-                            <div className="col-md-4">
+                            <div className="mx-auto">
                                 <VideoCard />
                             </div>
-                            <div className="col-md-4">
-                                <VideoCard />
-                            </div>
-                        </div>
-                        <div className="row mx-auto">
-                            <div className="col-md-4">
-                                <VideoCard />
-                            </div>
-                            <div className="col-md-4">
-                                <VideoCard />
-                            </div>
-                            <div className="col-md-4">
+                            <div className="mx-auto">
                                 <VideoCard />
                             </div>
                         </div>
                     </div>
-                    <div className="show-more">(Show More)</div>
+                    <div className="d-flex">
+                        <div className="mx-auto">
+                            <div className="show-more">(Show More)</div>
+                        </div>
+                    </div>
                 </section>
+                <hr className="divider" />
+                <section className="text-center" id="profile-description">
+                    <div className="text show-more-height"> 
+                        <h6 className="text-center">Recommended</h6>
+                        <div className="d-flex flex-wrap">
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="d-flex">
+                        <div className="mx-auto">
+                            <div className="show-more">(Show More)</div>
+                        </div>
+                    </div>
+                </section>
+                <hr className="divider" />
             </div>
         )
     }

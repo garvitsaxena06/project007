@@ -6,11 +6,9 @@ class CreateBtn extends React.Component {
     componentDidMount(){
         $(document).ready(function() {
             var offset = 0;
-            var duration = 500;
+            var duration = 0;
             if ($(this).scrollTop() >= offset) {
                 $('.createBtn').fadeIn(duration);
-            } else {
-                $('.createBtn').fadeOut(duration);
             }
         });
     }

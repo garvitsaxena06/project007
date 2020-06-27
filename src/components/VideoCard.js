@@ -5,10 +5,10 @@ class VideoCard extends Component {
     render() {
         return (
             <div>
-                <div className="card" style={{width: "18rem"}}>
+                <div className="card mx-auto" style={{width: "18rem"}}>
                     <img className="card-img-top" src={background} alt="videoCover"></img>
                     <div className="card-body">
-                        <div className="d-flex">
+                        <div className="d-flex flex-wrap">
                             <div>
                                 <h5 className="card-title">Title of the video</h5>
                             </div>
