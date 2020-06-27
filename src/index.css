@@ -474,17 +474,17 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 */
 
 #profile-description .show-more {
-    color: #777; 
+    color: #fff; 
     position:relative; 
-    font-size: 12px;  
+    font-size: 20px;  
     height: 20px; 
     text-align: center; 
-    background: #f1f1f1; 
+    background: #000; 
     cursor: pointer;
 }
 
 #profile-description .show-more:hover { 
-    color: #1779dd;
+    color: #CC0001;
 }
 
 #profile-description .show-more-height { 

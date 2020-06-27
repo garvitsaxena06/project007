@@ -8,13 +8,30 @@ class Home extends Component {
     componentDidMount() {
         $(".show-more").click(function () {
             if($(".text").hasClass("show-more-height")) {
-                $(this).text("(Show Less)");
+                $(this).removeClass("fas fa-chevron-down");
+                $(this).addClass("fas fa-chevron-up");
             } else {
-                $(this).text("(Show More)");
+                $(this).removeClass("fas fa-chevron-up");
+                $(this).addClass("fas fa-chevron-down");
             }
     
             $(".text").toggleClass("show-more-height");
         });
+
+        // var element = document.getElementById("show")
+        // element.click(() => {
+        //     if($(".text").hasClass("show-more-height")) {
+        //         let icon = document.getElementById("showIcon")
+        //         icon.classList.remove("fas fa-chevron-down")
+        //         icon.classList.add("fas fa-chevron-up")
+        //     }
+        //     else {
+        //         let icon = document.getElementById("showIcon")
+        //         icon.classList.remove("fas fa-chevron-up")
+        //         icon.classList.add("fas fa-chevron-down ")
+        //     }
+        //     $(".text").toggleClass("show-more-height");
+        // })
     }
    
     render() {
@@ -36,11 +53,20 @@ class Home extends Component {
                             <div className="mx-auto">
                                 <VideoCard />
                             </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
                         </div>
                     </div>
                     <div className="d-flex">
                         <div className="mx-auto">
-                            <div className="show-more">(Show More)</div>
+                            <div className="show-more fas fa-chevron-down" id="show"></div>
                         </div>
                     </div>
                 </section>
@@ -58,11 +84,20 @@ class Home extends Component {
                             <div className="mx-auto">
                                 <VideoCard />
                             </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
+                            <div className="mx-auto">
+                                <VideoCard />
+                            </div>
                         </div>
                     </div>
                     <div className="d-flex">
                         <div className="mx-auto">
-                            <div className="show-more">(Show More)</div>
+                            <div className="show-more fas fa-chevron-down" id="show"></div>
                         </div>
                     </div>
                 </section>
