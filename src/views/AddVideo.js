@@ -72,15 +72,17 @@ class Query extends Component {
                                 </Form.Group>
                             </div>
                         </div>
-                        <div className="row mx-auto">
+                        <div className="row mx-auto addVideo">
                             <div className="col-md-3 offset-md-3">
-                                <button type="submit" className="cta-btn mt-10 btn-block">ADD THUMBNAIL</button>
+                                <p>ADD THUMBNAIL</p>
+                                <input type="file" accept="image/*" required />
                             </div>
                             <div className="col-md-3">
-                                <button type="submit" className="cta-btn mt-10 btn-block">ADD VIDEO</button>
+                                <p>ADD VIDEO</p>
+                                <input type="file" accept="video/*" required />
                             </div>
                         </div>
-                        <div className="row mx-auto mt-4">
+                        <div className="row mx-auto">
                             <div className="col-md-6 offset-md-3">
                                 <button type="submit" className="cta-btn mt-10 btn-block btn-red">UPLOAD</button>
                             </div>
