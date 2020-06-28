@@ -240,6 +240,16 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     background-color: #1B1B1B;
 }
 
+.sidenav button a {
+    background-color: #CC0001;
+    padding: 0;
+}
+
+.sidenav button a:hover {
+    background-color: #CC0001;
+    padding: 0;
+}
+
 #main {
     margin-left: 200px !important; 
     margin-right: 200px !important;
@@ -550,4 +560,66 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     font-family: 'Montserrat';
     font-weight: 100;
     font-size: 14px;
+}
+
+/* 
+    CREATE VIDEO SECTION
+*/
+.createVideoSection {
+    width: 75%;
+}
+
+.createVideoSection .mainLoginInput {
+    font-family: 'Montserrat', sans-serif !important;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    border-width: 0;
+    margin: 0 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.createVideoSection .mainLoginInput::-webkit-input-placeholder { 
+    font-family: 'Montserrat', FontAwesome, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.createVideoSection hr {
+    margin-top: 0;
+    border-top: 1px solid #fff
+}
+
+.createVideoSection .options {
+    background-color: #0E0E0E;
+    font-size: 14px;
+}
+ 
+.createVideoSection .cta-btn {
+	background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 0px;
+    color: #000;
+    text-align: center;
+    border-color: #fff;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+.createVideoSection .btn-red {
+    background: #CC0001;
+    color: #fff;
 }

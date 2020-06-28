@@ -63,7 +63,7 @@ class Outlines extends Component {
                     <a className="mt-5" href="/"><i className="fas fa-cart-plus fa-lg" style={{paddingRight: "15px"}}></i>My Cart</a>
                     <a href="/"><i className="far fa-star fa-lg" style={{paddingRight: "15px"}}></i>My Watchlist</a>
                     <a className="mb-5" href="/profile"><i className="fas fa-user fa-lg" style={{paddingRight: "16px", paddingLeft: "2px"}}></i>My Account</a>
-                    <button className="mt-5 mb-5 create-btn"><i className="fas fa-video"></i> Create</button>
+                    <button href="/create" className="mt-5 mb-5 create-btn"><a href="/create"><i className="fas fa-video"></i> Create</a></button>
                     <a className="mt-5" href="/"><i className="far fa-question-circle fa-lg" style={{paddingRight: "15px"}}></i>Help</a>
                 </div>
             </div>

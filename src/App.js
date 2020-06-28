@@ -6,6 +6,7 @@ import Profile from "./views/Profile";
 import Preloader from "./components/Preloader";
 import BackToTop from "./components/BackToTop";
 import CreateBtn from "./components/CreateBtn";
+import AddVideo from "./views/AddVideo";
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
             <Switch>
               <Route path='/' exact component={Home} />
               <Route path='/profile' component={Profile} />
+              <Route path='/create' component={AddVideo} />
             </Switch>
           </Router>
           <Preloader />
@@ -30,6 +32,7 @@ class App extends Component {
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/profile' component={Profile} />
+            <Route path='/create' component={AddVideo} />
           </Switch>
         </Router>
         <Preloader />

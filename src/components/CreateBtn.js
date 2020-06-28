@@ -15,7 +15,7 @@ class CreateBtn extends React.Component {
     render(){
         if (this.props.isMobile()) {
             return (
-                <a href="/" className="createBtn"><i className="fas fa-video fa-sm"></i></a>
+                <a href="/create" className="createBtn"><i className="fas fa-video fa-sm"></i></a>
             )
         }
           

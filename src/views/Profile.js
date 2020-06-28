@@ -12,7 +12,7 @@ class Profile extends Component {
                     <Outlines />
                     <SidebarMobile />
                     <hr className="section-start"/>
-                    <section>
+                    <section id="profile">
                         <div className="d-flex flex-column">
                             <div className="mx-auto">
                                 <img className="profileImg" src={profile} alt="profile" />
@@ -43,7 +43,7 @@ class Profile extends Component {
                     <Outlines />
                     <SidebarMobile />
                     <hr className="section-start"/>
-                    <section>
+                    <section id="profile">
                         <div className="d-flex flex-column">
                             <div className="mx-auto">
                                 <img className="profileImg" src={profile} alt="profile" />
@@ -72,7 +72,7 @@ class Profile extends Component {
             <div>
                 <Outlines />
                 <hr className="section-start"/>
-                <section>
+                <section id="profile">
                     <div className="d-flex flex-column">
                         <div className="mx-auto">
                             <img className="profileImg" src={profile} alt="profile" />
