@@ -543,12 +543,11 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     font-family: 'Montserrat';
     font-weight: 100;
     font-size: 14px;
+    width: 300px;
 }
 
-.profileSection {
-    padding: 0 200px;
-}
-
-.profileSectionMobile {
-    padding: 0 30px;
+.profileAboutTablet {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    font-size: 14px;
 }
