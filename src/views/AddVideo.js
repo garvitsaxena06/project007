@@ -74,17 +74,21 @@ class Query extends Component {
                         </div>
                         <div className="row mx-auto addVideo">
                             <div className="col-md-3 offset-md-3">
-                                <p>ADD THUMBNAIL</p>
-                                <input type="file" accept="image/*" required />
+                                <label for="thumbnail-upload" class="custom-file-upload">
+                                    <p>ADD THUMBNAIL</p>
+                                </label>
+                                <input id="thumbnail-upload" type="file" accept="image/*" />
                             </div>
                             <div className="col-md-3">
-                                <p>ADD VIDEO</p>
-                                <input type="file" accept="video/*" required />
+                                <label for="video-upload" class="custom-file-upload">
+                                    <p>ADD VIDEO</p>
+                                </label>
+                                <input id="video-upload" type="file" accept="video/*" />
                             </div>
                         </div>
                         <div className="row mx-auto">
                             <div className="col-md-6 offset-md-3">
-                                <button type="submit" className="cta-btn mt-10 btn-block btn-red">UPLOAD</button>
+                                <button type="submit" className="mt-10 btn-block btn-red">UPLOAD</button>
                             </div>
                         </div>
                     </Form>

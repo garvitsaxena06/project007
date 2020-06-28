@@ -602,9 +602,42 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     background-color: #0E0E0E;
     font-size: 14px;
 }
- 
-.createVideoSection .cta-btn {
-	background: #fff;
+
+.createVideoSection .btn-red {
+    background: #CC0001;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    text-align: center;
+    border-color: #CC0001;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.createVideoSection p {
+    font-family: 'Montserrat', FontAwesome, sans-serif;
+    color: #000;
+    font-size: 14px;
+    font-weight: 900;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-left: 5px;
+    padding-top: 0px;
+}
+
+input[type="file"] {
+    display: contents;
+}
+
+.custom-file-upload {
+    background: #fff;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -615,60 +648,5 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     border-width: 0;
     border-radius: 5px;
     padding: 10px 0;
-    margin: 5px 0;
     cursor: pointer;
-}
-
-.createVideoSection .btn-red {
-    background: #CC0001;
-    color: #fff;
-}
-
-input {
-    height: 40px;
-    border: 0 solid #fff;
-}
-
-input:focus {
-    outline: none !important;
-}
-
-input[type=file] {
-    cursor: pointer;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 0;
-    font-weight: 900;
-}
-  
-input[type=file]:before {
-    width: 100%;
-    font-size: 12px;
-    font-weight: 900;
-    color: #000;
-    content: 'SELECT';
-    display: inline-block;
-    background: #fff;
-    border-radius: 5px;
-    border: 0px solid #fff;
-    padding: 10px 10px;
-    margin: 0 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-  
-input[type=file]::-webkit-file-upload-button {
-    visibility: hidden;
-}
-
-.createVideoSection p {
-    font-family: 'Montserrat', FontAwesome, sans-serif;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    overflow: visible;
-    vertical-align: top;
-    display: inline-block !important;
-    padding-left: 5px;
-    padding-top: 0px;
 }
