@@ -13,6 +13,23 @@ class Query extends Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
+    componentDidMount() {
+        var uploadThumbnail = document.getElementById("thumbnail-upload")
+        uploadThumbnail.onchange = function() {
+            if(this.files[0].size > 40960){
+               alert("File is too big! Upload a thumbnail with size less than 40 KB");
+               this.value = "";
+            };
+        };
+
+        var uploadVideo = document.getElementById("video-upload")
+        uploadVideo.onchange = function() {
+            if(this.files[0].size > 20971520){
+               alert("File is too big! Upload a video with size less than 40 KB");
+               this.value = "";
+            };
+        };
+    }
       
     handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -77,13 +94,13 @@ class Query extends Component {
                                 <label for="thumbnail-upload" class="custom-file-upload">
                                     <p>ADD THUMBNAIL</p>
                                 </label>
-                                <input id="thumbnail-upload" type="file" accept="image/*" />
+                                <input id="thumbnail-upload" type="file" accept="image/*" required />
                             </div>
                             <div className="col-md-3">
                                 <label for="video-upload" class="custom-file-upload">
                                     <p>ADD VIDEO</p>
                                 </label>
-                                <input id="video-upload" type="file" accept="video/*" />
+                                <input id="video-upload" type="file" accept="video/*" required />
                             </div>
                         </div>
                         <div className="row mx-auto">

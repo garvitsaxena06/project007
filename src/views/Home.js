@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Outlines from "../components/Outlines";
 import SidebarMobile from "../components/SidebarMobile";
 import VideoCard from "../components/VideoCard";
+import Footer from "../components/Footer";
 import $ from "jquery"
 
 class Home extends Component {
@@ -98,6 +99,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
+                <hr className="divider" />
+                <Footer />
                 <hr className="divider" />
             </div>
         )

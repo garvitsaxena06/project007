@@ -29,6 +29,11 @@ section {
     padding-bottom: 1%;
 }
 
+.red-section {
+    background-color: #CC0001;
+    color: #fff;
+}
+
 p {
     margin: 0 0;
 }
@@ -56,9 +61,9 @@ a:hover {
     color: #fff;
 }
 
-/* .row {
+.row {
     margin: 0px 0px !important;
-} */
+}
   
 
 /* 
@@ -622,7 +627,7 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 .createVideoSection p {
     font-family: 'Montserrat', FontAwesome, sans-serif;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 900;
     overflow: visible;
     vertical-align: top;
@@ -649,4 +654,30 @@ input[type="file"] {
     border-radius: 5px;
     padding: 10px 0;
     cursor: pointer;
+}
+
+/* 
+    FOOTER
+*/
+.social-icons {
+    padding: 100px 0px;
+}
+
+.red-section .row p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.footerContent {
+    padding: 40px 0px;
+}
+
+.footerContent p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 0px;
+}
+
+.footerContent .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
