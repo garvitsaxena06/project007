@@ -529,7 +529,7 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 
 .divider {
     border-top: 1px solid #000;
-    margin: 50px 0px;
+    margin: 25px 0px;
 }
 
 /* 
@@ -680,4 +680,50 @@ input[type="file"] {
 .footerContent .title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.footerContent button {
+    background: #CC0001;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    border-color: #CC0001;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 20px 16px;
+    cursor: pointer;
+}
+
+.copyrights {
+    padding: 15px 0px;
+    background-color: #fff;
+    color: #000;
+}
+
+.copyrights p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.copyrightsMobile {
+    padding: 15px 0px;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 65px;
+}
+
+.copyrightsMobile p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.titleMobile {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #CC0001;
 }

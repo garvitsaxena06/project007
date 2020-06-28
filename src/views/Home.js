@@ -101,7 +101,6 @@ class Home extends Component {
                 </section>
                 <hr className="divider" />
                 <Footer />
-                <hr className="divider" />
             </div>
         )
     }
