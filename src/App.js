@@ -25,6 +25,23 @@ class App extends Component {
           <CreateBtn />
         </div>
       )
+
+    if (this.props.isTablet()) {
+      return (
+        <div id="mainTablet">
+          <Router>
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/profile' component={Profile} />
+              <Route path='/create' component={AddVideo} />
+            </Switch>
+          </Router>
+          <Preloader />
+          <BackToTop />
+          <CreateBtn />
+        </div>
+      )
+    }  
       
     return (
       <div id="main">

@@ -157,6 +157,29 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 	cursor: pointer;
 }
 
+.back-to-top-tablet:hover {
+	color: #fff !important;
+	background-color: #e74c3c;
+	text-decoration: none;
+}
+ 
+.back-to-top-tablet {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	width: 3.2rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+	font-size: 1.4rem;
+	color: #fff;
+	background-color: #CC0001;
+	text-decoration: none;
+	border-radius: 3.2rem;
+	text-align: center;
+	cursor: pointer;
+}
+
 /* 
     CREATE-BTN
 */
@@ -261,6 +284,10 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 #main {
     margin-left: 200px !important; 
     margin-right: 200px !important;
+}
+
+#mainTablet {
+    margin-left: 100px !important;
 }
 
 @media screen and (max-height: 450px) {
@@ -747,4 +774,97 @@ input[type="file"] {
     font-weight: 600;
     font-size: 18px;
     color: #CC0001;
+}
+
+/* 
+    SIDENAVBAR TABLET
+*/
+
+.sideSectionT {
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1 !important;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-right: 1px solid #1B1B1B;
+}
+
+.sideSectionT .items a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sideSectionT .items a:hover {
+    background-color: #000;
+}
+
+.sideSectionT .items button {
+    background-color: #000;
+    color: #fff;
+    border: 0px solid #000;
+    font-weight: 900;
+    padding: 0;
+}
+
+.sideSectionT .items button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 0px solid #000;
+    font-weight: 900;
+    padding: 0;
+}
+
+.create {
+    background-color: #CC0001;
+    padding: 8px;
+    font-size: 10px !important;
+    border-radius: 50%;  
+}
+
+/* 
+    SIDEBAR MENU TABLET
+*/
+@media screen and (max-height: 450px) {
+    .sidebarTablet {padding-top: 15px;}
+    .sidebarTablet a {font-size: 18px;}
+}
+
+.sidebarTablet {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 2 !important; 
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px; 
+    transition: 0.1s;
+}
+
+.sidebarTablet .content {
+    padding: 80px 0px;
+}
+  
+/* 
+    SIDEBAR LINKS TABLET
+*/
+.sidebarTablet a, .sidebarTablet p {
+    padding: 8px 100px;
+    text-decoration: none;
+    text-align: center !important;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
 }

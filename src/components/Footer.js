@@ -11,7 +11,7 @@ class Footer extends Component {
                             <p>InstaGrat</p>
                         </div>
                         <div className="mx-auto">
-                            <p><i class="fab fa-linkedin-in fa-lg mr-3"></i><i class="fab fa-facebook-f fa-lg"></i></p>
+                            <p><i className="fab fa-linkedin-in fa-lg mr-3"></i><i className="fab fa-facebook-f fa-lg"></i></p>
                         </div>
                     </div>
                     <section className="footerContent">
@@ -54,7 +54,69 @@ class Footer extends Component {
                                 <p>Help</p>
                             </div>
                             <div className="p-1 mx-auto">
-                                <p><i class="far fa-copyright"></i> 2020 Instagrat Digital Studio</p>
+                                <p><i className="far fa-copyright"></i> 2020 Instagrat Digital Studio</p>
+                            </div>
+                        </div>
+                    </section>
+                </React.Fragment>
+            )
+        }
+
+        if (this.props.isTablet()) {
+            return (
+                <React.Fragment>
+                    <div className="red-section">
+                        <div className="social-icons">
+                            <div className="row mx-auto text-center">
+                                <div className="col-md-6 offset-md-3">
+                                    <p>We are here for YOU,<br/> say hi.</p>
+                                </div>
+                            </div><br/>
+                            <div className="row mx-auto text-center">
+                                <div className="col-md-6 offset-md-3">
+                                    <p><i className="fab fa-linkedin-in fa-lg mr-3"></i><i className="fab fa-facebook-f fa-lg"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section className="footerContent">
+                        <div className="d-flex flex-wrap">
+                            <div className="p-4 mx-auto">
+                                <p className="title">Technology</p>
+                                <p>Content</p>
+                                <p>Technology</p>
+                                <p>Content</p>
+                            </div>
+                            <div className="p-4 mx-auto">
+                                <p className="title">Technology</p>
+                                <p>Content</p>
+                                <p>Technology</p>
+                                <p>Content</p>
+                            </div>
+                            <div className="p-4 mx-auto">
+                                <p className="title">Technology</p>
+                                <p>Content</p>
+                                <p>Technology</p>
+                                <p>Content</p>
+                            </div>
+                            <div className="p-4 mx-auto">
+                                <button className="mt-5">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section className="copyrights">
+                        <div className="d-flex flex-wrap">
+                            <div className="p-1 mx-auto">
+                                <p>Privacy Policy</p>
+                            </div>
+                            <div className="p-1 mx-auto">
+                                <p>About Us</p>
+                            </div>
+                            <div className="p-1 mx-auto">
+                                <p>Help</p>
+                            </div>
+                            <div className="p-1 mx-auto">
+                                <p><i className="far fa-copyright"></i> 2020 Instagrat Digital Studio</p>
                             </div>
                         </div>
                     </section>
@@ -73,7 +135,7 @@ class Footer extends Component {
                         </div><br/>
                         <div className="row mx-auto text-center">
                             <div className="col-md-6 offset-md-3">
-                                <p><i class="fab fa-linkedin-in fa-lg mr-3"></i><i class="fab fa-facebook-f fa-lg"></i></p>
+                                <p><i className="fab fa-linkedin-in fa-lg mr-3"></i><i className="fab fa-facebook-f fa-lg"></i></p>
                             </div>
                         </div>
                     </div>
@@ -121,7 +183,7 @@ class Footer extends Component {
                             <p>Help</p>
                         </div>
                         <div className="p-1 mx-auto">
-                            <p><i class="far fa-copyright"></i> 2020 Instagrat Digital Studio</p>
+                            <p><i className="far fa-copyright"></i> 2020 Instagrat Digital Studio</p>
                         </div>
                     </div>
                 </section>
