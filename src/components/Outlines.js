@@ -63,7 +63,7 @@ class Outlines extends Component {
               <a href="/"><i className="fas fa-home fa-lg"></i></a>
               <a href="/"><i className="fas fa-star fa-lg"></i></a>
               <button onClick={this.openNav}><i className="fas fa-search fa-lg"></i></button>
-              <a href="/"><i className="fas fa-cart-plus fa-lg"></i></a>
+              <a href="/"><i className="fas fa-bell fa-lg"></i></a>
               <a href="/profile"><i className="fas fa-user fa-lg"></i></a>
             </div>
           </React.Fragment>
@@ -75,6 +75,7 @@ class Outlines extends Component {
       return (
           <React.Fragment>
             <div id="sidebarTablet" className="sidebarTablet">
+                <a href="/profile" className="mt-5">Hi User</a>
                 <button className="closebtn" onClick={this.closeNavT}><i className="fas fa-arrow-left fa-xs"></i></button>
                 <div className="content mx-auto">
                     <p>For You</p>
@@ -91,7 +92,10 @@ class Outlines extends Component {
                             <p>InstaGrat</p>
                         </div>
                         <div className="mx-auto tabletSocial">
-                            <p><i className="fab fa-linkedin-in fa-lg mr-3"></i><i className="fab fa-facebook-f fa-lg"></i></p>
+                            <div className="d-flex">
+                              <a href="/" className="p-2 ml-1"><i className="fab fa-linkedin-in fa-lg"></i></a>
+                              <a href="/" className="p-2"><i className="fab fa-facebook-f fa-lg"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,13 +135,12 @@ class Outlines extends Component {
           <nav className="navbar navbar-expand-md fixed-top">
             <div className="navbar-collapse collapse w-50 order-1 order-md-0 dual-collapse2">
                 <div className="sidenav">
-                    <div style={{borderBottom: "1px solid #1B1B1B"}}>
+                    <div style={{borderBottom: "1px solid #1B1B1B", marginBottom: "100px"}}>
                       <div className="navbar-brand">
                         <a href="/" className="navbar-brand logo"><img src={logo} alt="IGLogo"/></a>
                       </div>
                     </div>
-                    <a className="mt-5" href="/"><i className="fas fa-cart-plus fa-lg" style={{paddingRight: "15px"}}></i>My Cart</a>
-                    <a href="/"><i className="far fa-star fa-lg" style={{paddingRight: "15px"}}></i>My Watchlist</a>
+                    <a className="mt-5" href="/"><i className="far fa-star fa-lg" style={{paddingRight: "15px"}}></i>My Watchlist</a>
                     <a className="mb-5" href="/profile"><i className="fas fa-user fa-lg" style={{paddingRight: "16px", paddingLeft: "2px"}}></i>My Account</a>
                     <button href="/create" className="mt-5 create-btn red-btn"><a href="/create"><i className="fas fa-video"></i> Create</a></button>
                     <button href="/create" className="mt-3 mb-5 create-btn"><a href="/create">Subscribe</a></button>
@@ -153,14 +156,29 @@ class Outlines extends Component {
 
             <div className="navbar-collapse collapse w-50 order-3 dual-collapse2">
               <div className="sidenavRight">
+                  <a href="/profile">Hi User</a>
                   <div style={{paddingTop: "50px"}}>
-                    <a className="mt-5" href="/"><i className="fas fa-bolt fa-lg" style={{paddingRight: "18px"}}></i>Trending</a>
+                    <p className="mt-5">For You</p>
+                    <a href="/"><i className="fas fa-bolt fa-lg" style={{paddingRight: "18px"}}></i>Trending</a>
                     <a href="/"><i className="far fa-thumbs-up fa-lg" style={{paddingRight: "10px"}}></i>Recommended</a>
-                    <a className="mt-5" href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Technology</span></a>
+                    <a href="/"><i className="far fa-bookmark fa-lg" style={{paddingRight: "15px"}}></i>Bookmarked</a>
+                    <p className="mt-5">Categories</p>
+                    <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Technology</span></a>
                     <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Content</span></a>
                     <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Marketing</span></a>
                     <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Designing</span></a>
                   </div>
+                  <div className="d-flex flex-column mt-5" style={{paddingTop: "40px"}}>
+                        <div className="mx-auto titleTablet">
+                            <p>InstaGrat</p>
+                        </div>
+                        <div className="mx-auto tabletSocial">
+                            <div className="d-flex">
+                              <a href="/" className="p-2 ml-3"><i className="fab fa-linkedin-in fa-lg"></i></a>
+                              <a href="/" className="p-2"><i className="fab fa-facebook-f fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
               </div>
             </div>
           </nav>

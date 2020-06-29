@@ -37,6 +37,16 @@ class SidebarMobile extends Component {
                             <a href="/">Content</a>
                             <a href="/">Marketing</a>
                             <a href="/">Designing</a>
+                            <div className="mt-5 mobileSocial" style={{paddingTop: "50px"}}>
+                                <div className="d-flex">
+                                    <div className="mx-auto">
+                                        <div className="d-flex">
+                                            <a href="/" className="p-2 ml-3"><i className="fab fa-linkedin-in fa-lg"></i></a>
+                                            <a href="/" className="p-2"><i className="fab fa-facebook-f fa-lg"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div>
