@@ -613,6 +613,7 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     font-family: 'Montserrat';
     font-weight: 100;
     font-size: 14px;
+    width: 200px;
 }
 
 /* 
@@ -851,20 +852,53 @@ input[type="file"] {
     transition: 0.1s;
 }
 
+.sidebarTablet .closebtn {
+    padding-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    font-size: 36px;
+    background-color: #000;
+    color: #fff;
+    border: 0 solid #000;
+    cursor: pointer;
+}
+
 .sidebarTablet .content {
-    padding: 80px 0px;
+    padding: 120px 0px;
 }
   
 /* 
     SIDEBAR LINKS TABLET
 */
-.sidebarTablet a, .sidebarTablet p {
-    padding: 8px 100px;
+.sidebarTablet a {
+    padding: 8px 70px;
     text-decoration: none;
-    text-align: center !important;
+    text-align: left !important;
     font-size: 17px;
     font-weight: 600;
     color: #fff;
     display: block;
     font-family: 'Montserrat', sans-serif;
+}
+
+.sidebarTablet p {
+    padding: 8px 20px;
+    text-decoration: none;
+    text-align: left !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #808080;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titleTablet p {
+    color: #CC0001;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.tabletSocial p {
+    color: #fff;
 }

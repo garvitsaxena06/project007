@@ -89,7 +89,7 @@ class Query extends Component {
                                 </Form.Group>
                             </div>
                         </div>
-                        <div className="row mx-auto addVideo">
+                        <div className="row mx-auto p-3">
                             <div className="col-md-3 offset-md-3">
                                 <label for="thumbnail-upload" class="custom-file-upload">
                                     <p>ADD THUMBNAIL</p>
@@ -103,7 +103,7 @@ class Query extends Component {
                                 <input id="video-upload" type="file" accept="video/*" required />
                             </div>
                         </div>
-                        <div className="row mx-auto">
+                        <div className="row mx-auto pl-3 pr-3 pb-3">
                             <div className="col-md-6 offset-md-3">
                                 <button type="submit" className="mt-10 btn-block btn-red">UPLOAD</button>
                             </div>
