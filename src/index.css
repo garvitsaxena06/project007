@@ -246,12 +246,15 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
 }
 
 .sidenav button a {
-    background-color: #CC0001;
+    background-color: #fff;
+    color: #000;
+    font-weight: 900;
     padding: 0;
 }
 
 .sidenav button a:hover {
-    background-color: #CC0001;
+    background-color: #fff;
+    color: #000;
     padding: 0;
 }
 
@@ -269,20 +272,38 @@ h6 { font-family: 'Montserrat', sans-serif; font-size: 18px; font-style: normal;
     CREATE BTN DSKTP
 */
 .create-btn {
-    background: #CC0001;
+    background: #fff;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 14px;
     line-height: 0px;
-    color: #FFFFFF;
+    color: #000;
     text-align: center;
-    border-color: #CC0001;
+    border-color: #fff;
     border-width: 0;
     border-radius: 5px;
-    padding: 10px 16px;
+    padding: 18px 14px;
     margin-left: 35px;
     cursor: pointer;
+}
+
+.red-btn {
+    background-color: #CC0001;
+    color: #fff;
+    padding: 10px 16px !important;
+}
+
+.red-btn a {
+    background-color: #CC0001 !important;
+    color: #fff !important;
+    padding: 0;
+}
+
+.red-btn a:hover {
+    background-color: #CC0001 !important;
+    color: #fff !important;
+    padding: 0;
 }
 
 /* 
