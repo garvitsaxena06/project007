@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Outlines from "../components/Outlines";
 import SidebarMobile from "../components/SidebarMobile";
+import Payment from "../components/Payment";
 
 class Subscribe extends Component {
     constructor() {
@@ -9,6 +10,38 @@ class Subscribe extends Component {
             subscription: '',
             price: '',
         }
+    }
+
+    handleClick1 = () => {
+        console.log("Clicked 1!")
+        this.setState({
+            subscription: '30-Days',
+            price: '40'
+        })
+    }
+
+    handleClick2 = () => {
+        console.log("Clicked 2!")
+        this.setState({
+            subscription: '90-Days',
+            price: '250'
+        })
+    }
+
+    handleClick3 = () => {
+        console.log("Clicked 3!")
+        this.setState({
+            subscription: 'Monthly',
+            price: '120'
+        })
+    }
+
+    handleClick4 = () => {
+        console.log("Clicked 4!")
+        this.setState({
+            subscription: 'Yearly',
+            price: '700'
+        })
     }
 
     render() {
@@ -36,8 +69,8 @@ class Subscribe extends Component {
                                 </div>
 
                                 <ul className="list-group list-group-flush">
-                                    <button>
-                                        <a href="/subscription/payment">
+                                    <button onClick={this.handleClick1}>
+                                        <a href="/subscribe/payment">
                                             <li className="list-group-item list-group-item-action">
                                                 <div className="d-flex">
                                                     <div className="mr-auto p-2">
@@ -53,8 +86,8 @@ class Subscribe extends Component {
                                             </li>
                                         </a>
                                     </button>
-                                    <button>
-                                        <a href="/subscription/payment">
+                                    <button onClick={this.handleClick2}>
+                                        <a href="/subscribe/payment">
                                             <li className="list-group-item list-group-item-action">
                                                 <div className="d-flex">
                                                     <div className="mr-auto p-2">
@@ -79,8 +112,8 @@ class Subscribe extends Component {
                                 </div>
 
                                 <ul className="list-group list-group-flush">
-                                    <button>
-                                        <a href="/subscription/payment">
+                                    <button onClick={this.handleClick3}>
+                                        <a href="/subscribe/payment">
                                             <li className="list-group-item list-group-item-action">
                                                 <div className="d-flex">
                                                     <div className="mr-auto p-2">
@@ -96,8 +129,8 @@ class Subscribe extends Component {
                                             </li>
                                         </a>
                                     </button>
-                                    <button>
-                                        <a href="/subscription/payment">
+                                    <button onClick={this.handleClick4}>
+                                        <a href="/subscribe/payment">
                                             <li className="list-group-item list-group-item-action">
                                                 <div className="d-flex">
                                                     <div className="mr-auto p-2">
@@ -118,6 +151,7 @@ class Subscribe extends Component {
                         </div>
                     </div>
                 </section>
+                <Payment subscription={this.state.subscription} price={this.state.price} />
             </div>
         )
     }
