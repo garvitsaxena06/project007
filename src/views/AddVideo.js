@@ -91,13 +91,13 @@ class Query extends Component {
                         </div>
                         <div className="row mx-auto p-3">
                             <div className="col-md-3 offset-md-3">
-                                <label for="thumbnail-upload" class="custom-file-upload">
+                                <label for="thumbnail-upload" className="custom-file-upload">
                                     <p>ADD THUMBNAIL</p>
                                 </label>
                                 <input id="thumbnail-upload" type="file" accept="image/*" required />
                             </div>
                             <div className="col-md-3">
-                                <label for="video-upload" class="custom-file-upload">
+                                <label for="video-upload" className="custom-file-upload">
                                     <p>ADD VIDEO</p>
                                 </label>
                                 <input id="video-upload" type="file" accept="video/*" required />

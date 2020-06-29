@@ -3,10 +3,12 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import {withGetScreen} from 'react-getscreen'
 import Home from './views/Home';
 import Profile from "./views/Profile";
+import AddVideo from "./views/AddVideo";
+import Subscribe from "./views/Subscribe";
 import Preloader from "./components/Preloader";
 import BackToTop from "./components/BackToTop";
 import CreateBtn from "./components/CreateBtn";
-import AddVideo from "./views/AddVideo";
+import Payment from "./components/Payment";
 
 class App extends Component {
   render() {
@@ -18,6 +20,8 @@ class App extends Component {
               <Route path='/' exact component={Home} />
               <Route path='/profile' component={Profile} />
               <Route path='/create' component={AddVideo} />
+              <Route path='/subscribe' exact component={Subscribe} />
+              <Route path='/subscribe/payment' component={Payment} />
             </Switch>
           </Router>
           <Preloader />
@@ -34,6 +38,8 @@ class App extends Component {
               <Route path='/' exact component={Home} />
               <Route path='/profile' component={Profile} />
               <Route path='/create' component={AddVideo} />
+              <Route path='/subscribe' exact component={Subscribe} />
+              <Route path='/subscribe/payment' component={Payment} />
             </Switch>
           </Router>
           <Preloader />
@@ -50,6 +56,8 @@ class App extends Component {
             <Route path='/' exact component={Home} />
             <Route path='/profile' component={Profile} />
             <Route path='/create' component={AddVideo} />
+            <Route path='/subscribe' exact component={Subscribe} />
+            <Route path='/subscribe/payment' component={Payment} />
           </Switch>
         </Router>
         <Preloader />
