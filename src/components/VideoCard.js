@@ -13,7 +13,7 @@ class VideoCard extends Component {
                                 <h5 className="card-title my-card-title">Title of the video</h5>
                             </div>
                             <div className="ml-auto">
-                                <h5 className="card-title font-weight-bolder">4:30</h5>
+                                <h6 className="card-title my-card-title font-weight-bolder">4:30</h6>
                             </div>
                         </div>
                     </div>
