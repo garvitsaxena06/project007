@@ -9,7 +9,9 @@ class Subscribe extends Component {
         this.state = {
             subscription: '',
             price: '',
-            redirect: false        }
+            plan: '',
+            redirect: false        
+        }
     }
 
     handleClick1 = () => {
@@ -17,6 +19,7 @@ class Subscribe extends Component {
         this.setState({
             subscription: '30-Days',
             price: '40',
+            plan: 'Pre-Paid plan',
             redirect: true
         })
     }
@@ -26,6 +29,7 @@ class Subscribe extends Component {
         this.setState({
             subscription: '90-Days',
             price: '250',
+            plan: 'Pre-Paid plan',
             redirect: true
         })
     }
@@ -35,6 +39,7 @@ class Subscribe extends Component {
         this.setState({
             subscription: 'Monthly',
             price: '120',
+            plan: 'Subscription plan',
             redirect: true
         })
     }
@@ -44,6 +49,7 @@ class Subscribe extends Component {
         this.setState({
             subscription: 'Yearly',
             price: '700',
+            plan: 'Subscription plan',
             redirect: true
         })
     }
@@ -54,7 +60,7 @@ class Subscribe extends Component {
                 <React.Fragment>
                     <Redirect to={{
                         pathname: "/subscribe/payment",
-                        state: {subscription: this.state.subscription, price: this.state.price}
+                        state: {subscription: this.state.subscription, price: this.state.price, plan: this.state.plan}
                     }} />
                 </React.Fragment>
             )
@@ -78,6 +84,9 @@ class Subscribe extends Component {
                                     </div>
                                     <div className="">
                                         Pre-Paid
+                                    </div>
+                                    <div className="ml-auto font-weight-light" style={{fontSize: "12px", letterSpacing: "2px"}}>
+                                        <p>1/2</p>
                                     </div>
                                     <div className="ml-auto">
                                         <a href="/"><i className="fas fa-times"></i></a>

@@ -945,7 +945,7 @@ input[type="file"] {
     border-radius: 10px;
 }
 
-.subscribe-card a {
+.subscribe-card a, .subscribe-card p {
     color: #000;
 }
 
@@ -973,4 +973,33 @@ input[type="file"] {
 .subscribe-card ul li span {
     font-size: 12px;
     font-weight: 900;
+}
+
+.subscribe-card .payment li {
+    height: 80px;
+}
+
+.subscribe-card .payment li:hover {
+    background-color: #fff;
+}
+
+.buy-btn {
+    background: #CC0001;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 0px;
+    color: #fff;
+    text-align: center;
+    border-color: #CC0001;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 18px 25px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.buy-btn a {
+    color: #fff;
 }
