@@ -10,46 +10,79 @@ class Subscribe extends Component {
             subscription: '',
             price: '',
             plan: '',
+            date: '',
             redirect: false        
         }
     }
 
     handleClick1 = () => {
         console.log("Clicked 1!")
+        let someDate = new Date();
+        let numberOfDaysToAdd = 30;
+        someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+        let dd = someDate.getDate();
+        let mm = someDate.getMonth() + 1;
+        let y = someDate.getFullYear();
+        let someFormattedDate = dd + '/'+ mm + '/'+ y;
         this.setState({
             subscription: '30-Days',
             price: '40',
             plan: 'Pre-Paid plan',
+            date: someFormattedDate,
             redirect: true
         })
     }
 
     handleClick2 = () => {
         console.log("Clicked 2!")
+        let someDate = new Date();
+        let numberOfDaysToAdd = 90;
+        someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+        let dd = someDate.getDate();
+        let mm = someDate.getMonth() + 1;
+        let y = someDate.getFullYear();
+        let someFormattedDate = dd + '/'+ mm + '/'+ y;
         this.setState({
             subscription: '90-Days',
             price: '250',
             plan: 'Pre-Paid plan',
+            date: someFormattedDate,
             redirect: true
         })
     }
 
     handleClick3 = () => {
         console.log("Clicked 3!")
+        let someDate = new Date();
+        let numberOfDaysToAdd = 30;
+        someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+        let dd = someDate.getDate();
+        let mm = someDate.getMonth() + 1;
+        let y = someDate.getFullYear();
+        let someFormattedDate = dd + '/'+ mm + '/'+ y;
         this.setState({
             subscription: 'Monthly',
             price: '120',
             plan: 'Subscription plan',
+            date: someFormattedDate,
             redirect: true
         })
     }
 
     handleClick4 = () => {
         console.log("Clicked 4!")
+        let someDate = new Date();
+        let numberOfDaysToAdd = 365;
+        someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+        let dd = someDate.getDate();
+        let mm = someDate.getMonth() + 1;
+        let y = someDate.getFullYear();
+        let someFormattedDate = dd + '/'+ mm + '/'+ y;
         this.setState({
             subscription: 'Yearly',
             price: '700',
             plan: 'Subscription plan',
+            date: someFormattedDate,
             redirect: true
         })
     }
@@ -60,7 +93,7 @@ class Subscribe extends Component {
                 <React.Fragment>
                     <Redirect to={{
                         pathname: "/subscribe/payment",
-                        state: {subscription: this.state.subscription, price: this.state.price, plan: this.state.plan}
+                        state: {subscription: this.state.subscription, price: this.state.price, plan: this.state.plan, date: this.state.date}
                     }} />
                 </React.Fragment>
             )

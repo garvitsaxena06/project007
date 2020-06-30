@@ -3,7 +3,6 @@ import Outlines from "../components/Outlines";
 import SidebarMobile from "../components/SidebarMobile";
 
 function Payment({location}) {
-    console.log(location)
     return (
         <div>
             <Outlines />
@@ -38,7 +37,7 @@ function Payment({location}) {
                                                     Validity
                                                 </div>
                                                 <div className="p-1 font-weight-bold" style={{fontSize: "10px", letterSpacing: "2px"}}>
-                                                    12/08/2020
+                                                    {location.state.date}
                                                 </div>
                                             </div>
                                         </div>
