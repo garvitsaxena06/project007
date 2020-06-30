@@ -83,10 +83,10 @@ class Outlines extends Component {
                     <a href="/"><i className="far fa-thumbs-up mr-2"></i>Recommended</a>
                     <a className="mb-5" href="/"><i className="far fa-bookmark mr-2"></i>Bookmarked</a>
                     <p className="mt-5">Categories</p>
-                    <a href="/">Technology</a>
-                    <a href="/">Content</a>
-                    <a href="/">Marketing</a>
-                    <a className="mb-5" href="/">Designing</a>
+                    <a href="/categories/technology">Technology</a>
+                    <a href="/categories/content">Content</a>
+                    <a href="/categories/marketing">Marketing</a>
+                    <a className="mb-5" href="/categories/designing">Designing</a>
                     <div className="d-flex flex-column mt-5" style={{paddingTop: "200px"}}>
                         <div className="mx-auto titleTablet">
                             <p>InstaGrat</p>
@@ -163,10 +163,10 @@ class Outlines extends Component {
                     <a href="/"><i className="far fa-thumbs-up fa-lg" style={{paddingRight: "10px"}}></i>Recommended</a>
                     <a href="/"><i className="far fa-bookmark fa-lg" style={{paddingRight: "15px"}}></i>Bookmarked</a>
                     <p className="mt-5">Categories</p>
-                    <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Technology</span></a>
-                    <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Content</span></a>
-                    <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Marketing</span></a>
-                    <a href="/"><span className="ml-4" style={{paddingLeft: "6px"}}>Designing</span></a>
+                    <a href="/categories/technology"><span className="ml-4" style={{paddingLeft: "6px"}}>Technology</span></a>
+                    <a href="/categories/content"><span className="ml-4" style={{paddingLeft: "6px"}}>Content</span></a>
+                    <a href="/categories/marketing"><span className="ml-4" style={{paddingLeft: "6px"}}>Marketing</span></a>
+                    <a href="/categories/designing"><span className="ml-4" style={{paddingLeft: "6px"}}>Designing</span></a>
                   </div>
                   <div className="d-flex flex-column mt-5" style={{paddingTop: "40px"}}>
                         <div className="mx-auto titleTablet">

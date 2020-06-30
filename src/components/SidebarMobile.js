@@ -33,10 +33,10 @@ class SidebarMobile extends Component {
                         <div className="content">
                             <a href="/"><i className="fas fa-bolt mr-2"></i>Trending</a>
                             <a className="mb-5" href="/"><i className="far fa-thumbs-up mr-2"></i>Recommended</a>
-                            <a className="mt-5" style={{paddingTop: "50px"}} href="/">Technology</a>
-                            <a href="/">Content</a>
-                            <a href="/">Marketing</a>
-                            <a href="/">Designing</a>
+                            <a className="mt-5" style={{paddingTop: "50px"}} href="/categories/technology">Technology</a>
+                            <a href="/categories/content">Content</a>
+                            <a href="/categories/marketing">Marketing</a>
+                            <a href="/categories/designing">Designing</a>
                             <div className="mt-5 mobileSocial" style={{paddingTop: "50px"}}>
                                 <div className="d-flex">
                                     <div className="mx-auto">

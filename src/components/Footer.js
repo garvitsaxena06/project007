@@ -57,7 +57,7 @@ class Footer extends Component {
                                 <p>Help</p>
                             </div>
                             <div className="p-1 mx-auto">
-                                <p><i className="far fa-copyright"></i><text className="font-weight-light"> 2020</text><text className="font-weight-bold"> IDS</text></p>
+                                <p><i className="far fa-copyright"></i><span className="font-weight-light"> 2020</span><span className="font-weight-bold"> IDS</span></p>
                             </div>
                         </div>
                     </section>
@@ -119,7 +119,7 @@ class Footer extends Component {
                                 <p>Help</p>
                             </div>
                             <div className="p-1 mx-auto">
-                                <p><i className="far fa-copyright"></i><text className="font-weight-light"> 2020</text><text className="font-weight-bold"> IDS</text></p>
+                                <p><i className="far fa-copyright"></i><span className="font-weight-light"> 2020</span><span className="font-weight-bold"> IDS</span></p>
                             </div>
                         </div>
                     </section>
@@ -186,7 +186,7 @@ class Footer extends Component {
                             <p>Help</p>
                         </div>
                         <div className="p-1 mx-auto">
-                            <p><i className="far fa-copyright"></i><text className="font-weight-light"> 2020</text><text className="font-weight-bold"> IDS</text></p>
+                            <p><i className="far fa-copyright"></i><span className="font-weight-light"> 2020</span><span className="font-weight-bold"> IDS</span></p>
                         </div>
                     </div>
                 </section>

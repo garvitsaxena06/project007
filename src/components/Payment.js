@@ -56,7 +56,7 @@ function Payment({location}) {
                             </ul>
 
                             <div className="d-flex mb-2">
-                                <div className="pt-5 pl-4 font-weight-normal" style={{marginLeft: "10px"}}>
+                                <div className="pt-5 font-weight-normal" style={{marginLeft: "10px"}}>
                                     Payable Amount
                                 </div>
                                 <div className="pt-5 pl-4" style={{marginLeft: "10px", fontSize: "12px", marginTop: "2px"}}>
