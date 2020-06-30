@@ -31,7 +31,7 @@ class SidebarMobile extends Component {
                     <div id="mySidebar" className="sidebarMobile">
                         <button className="closebtn" onClick={this.closeNav}><i className="fas fa-arrow-left fa-xs"></i></button>
                         <div className="content">
-                            <a href="/trendin   dsmng"><i className="fas fa-bolt mr-2"></i>Trending</a>
+                            <a href="/trending"><i className="fas fa-bolt mr-2"></i>Trending</a>
                             <a className="mb-5" href="/recommended"><i className="far fa-thumbs-up mr-2"></i>Recommended</a>
                             <a className="mt-5" style={{paddingTop: "50px"}} href="/categories/technology">Technology</a>
                             <a href="/categories/content">Content</a>
