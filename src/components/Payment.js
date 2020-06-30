@@ -62,7 +62,7 @@ function Payment({location}) {
                                 <div className="pt-5 pl-4" style={{marginLeft: "10px", fontSize: "12px", marginTop: "2px"}}>
                                     Rs. {location.state.price}
                                 </div>
-                                <div className="pt-4 pl-4 ml-auto" style={{marginLeft: "10px", marginTop: "12px"}}>
+                                <div className="pt-4 pl-4 ml-auto" style={{marginTop: "18px"}}>
                                     <button className="buy-btn"><a href="/">Buy</a></button>
                                 </div>
                             </div>
