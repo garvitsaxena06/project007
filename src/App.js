@@ -6,6 +6,9 @@ import Home from './views/Home';
 import Profile from "./views/Profile";
 import AddVideo from "./views/AddVideo";
 import Subscribe from "./views/Subscribe";
+import Trending from "./views/Trending";
+import Recommended from "./views/Recommended";
+import Bookmarked from "./views/Bookmarked";
 
 import Technology from "./views/Categories/Technology";
 import Marketing from "./views/Categories/Marketing";
@@ -28,6 +31,9 @@ class App extends Component {
               <Route path='/' exact component={Home} />
               <Route path='/profile' component={Profile} />
               <Route path='/create' component={AddVideo} />
+              <Route path='/trending' component={Trending} />
+              <Route path='/recommended' component={Recommended} />
+              <Route path='/bookmarked' component={Bookmarked} />
               <Route path='/categories/technology' component={Technology} />
               <Route path='/categories/marketing' component={Marketing} />
               <Route path='/categories/designing' component={Designing} />
@@ -50,6 +56,9 @@ class App extends Component {
               <Route path='/' exact component={Home} />
               <Route path='/profile' component={Profile} />
               <Route path='/create' component={AddVideo} />
+              <Route path='/trending' component={Trending} />
+              <Route path='/recommended' component={Recommended} />
+              <Route path='/bookmarked' component={Bookmarked} />
               <Route path='/categories/technology' component={Technology} />
               <Route path='/categories/marketing' component={Marketing} />
               <Route path='/categories/designing' component={Designing} />
@@ -72,6 +81,9 @@ class App extends Component {
             <Route path='/' exact component={Home} />
             <Route path='/profile' component={Profile} />
             <Route path='/create' component={AddVideo} />
+            <Route path='/trending' component={Trending} />
+            <Route path='/recommended' component={Recommended} />
+            <Route path='/bookmarked' component={Bookmarked} />
             <Route path='/categories/technology' component={Technology} />
             <Route path='/categories/marketing' component={Marketing} />
             <Route path='/categories/designing' component={Designing} />

@@ -40,7 +40,7 @@ class Home extends Component {
                 <hr className="section-start"/>
                 <section className="text-center" id="profile-description">
                     <div className="text1 show-more-height"> 
-                        <h6 className="text-center">My Watchlist</h6>
+                        <h6 className="text-center">Trending</h6>
                         <div className="d-flex flex-wrap">
                             <div className="mx-auto">
                                 <VideoCard />
