@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { Redirect } from "react-router-dom";
 import Outlines from "../components/Outlines";
 import SidebarMobile from "../components/SidebarMobile";
-import Payment from "../components/Payment";
 
 class Subscribe extends Component {
     constructor() {
@@ -9,14 +9,15 @@ class Subscribe extends Component {
         this.state = {
             subscription: '',
             price: '',
-        }
+            redirect: false        }
     }
 
     handleClick1 = () => {
         console.log("Clicked 1!")
         this.setState({
             subscription: '30-Days',
-            price: '40'
+            price: '40',
+            redirect: true
         })
     }
 
@@ -24,7 +25,8 @@ class Subscribe extends Component {
         console.log("Clicked 2!")
         this.setState({
             subscription: '90-Days',
-            price: '250'
+            price: '250',
+            redirect: true
         })
     }
 
@@ -32,7 +34,8 @@ class Subscribe extends Component {
         console.log("Clicked 3!")
         this.setState({
             subscription: 'Monthly',
-            price: '120'
+            price: '120',
+            redirect: true
         })
     }
 
@@ -40,11 +43,24 @@ class Subscribe extends Component {
         console.log("Clicked 4!")
         this.setState({
             subscription: 'Yearly',
-            price: '700'
+            price: '700',
+            redirect: true
         })
     }
 
     render() {
+        if (this.state.redirect) {
+            return (
+                <React.Fragment>
+                    <Redirect to={{
+                        pathname: "/subscribe/payment",
+                        state: {subscription: this.state.subscription, price: this.state.price}
+                    }} />
+                </React.Fragment>
+            )
+        }
+
+        else
         return (
             <div>
                 <Outlines />
@@ -151,7 +167,6 @@ class Subscribe extends Component {
                         </div>
                     </div>
                 </section>
-                <Payment subscription={this.state.subscription} price={this.state.price} />
             </div>
         )
     }
